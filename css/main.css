@@ -11,8 +11,9 @@ html {
 
 main {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "banner banner banner"
-  "col1 col2 col3";
+  grid-template-areas:
+    "banner banner banner"
+    "col1 col2 col3";
   grid-gap: .75rem;
 }
 
@@ -22,4 +23,5 @@ main {
 
 .banner-text {
   grid-area: banner;
+  align-self: center;
 }
