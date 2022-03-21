@@ -1,7 +1,10 @@
 html {
   box-sizing: border-box;
   font-family: Merriweather, serif;
+  font-weight: normal;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 *, *::before, *::after {
@@ -10,6 +13,12 @@ html {
 
 h1 {
   padding: 1.5rem;
+  margin: 0;
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.8rem;
+  line-height: 1.5;
 }
 
 header {
@@ -22,20 +31,25 @@ header {
 }
 
 div {
+  margin: 1rem;
+  padding: 1rem;
+  font-style: italic;
+  font-weight: normal;
   grid-area: box4;
   grid-column: 1 / -1;
   align-self: end;
   color: white;
-  padding: 1rem;
 }
 
 main {
+  margin: 0;
+  padding: .75rem 0 0;
+  gap: .75rem;
+  font-weight: normal;
   list-style: none;
-  padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: .75rem;
   grid-template-areas: "box1 box2 box3";
 }
 
@@ -48,14 +62,50 @@ img {
   grid-row: 1;
 }
 
+.time {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .temple {
+  margin: 0;
+  padding: 0;
   grid-area: box1;
 }
 
 .colossus {
+  margin: 0;
+  padding: 0;
   grid-area: box2;
 }
 
 .gardens {
+  margin: 0;
+  padding: 0;
   grid-area: box3;
+}
+
+dt {
+  font-style: italic;
+}
+
+dl {
+  margin: 0;
+  padding: 0 0 0 1rem;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: normal;
+  margin: 0;
+  padding: 1rem 0 0 1rem;
+}
+
+body {
+  margin: 0;
 }
